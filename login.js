@@ -20,7 +20,7 @@ const validate=()=>{
     }else{
      alert("usuario o contraseña incorrectos")
      cleanInputs();
-        intentos++;
+        attempts++;
     }
 }
 
@@ -30,7 +30,7 @@ const cleanInputs=()=>{
 }
 
 const validateAttempts=()=>{
-    if(intentos>=3)alert("has superado el limite de intentos");    
+    if(attempts>=3)alert("has superado el limite de intentos");    
 }
 
 
