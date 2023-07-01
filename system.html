@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="inputs-first">
+          <div class="input-date">
+            <label>Fecha:</label>
+            <input type="date" id="fecha">
+          </div>
+          <div class="input-name">
+            <label>Nombres:</label>
+            <input type="text" id="nombres">
+          </div>
+          <div class="input-taxes">
+            <label>Provincia:</label>
+            <select class="select-taxes" id="provincia">
+              <option value="0.1">Impuesto 1 (10%)</option>
+              <option value="0.2">Impuesto 2 (20%)</option>
+              <option value="0.3">Impuesto 3 (30%)</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="grid-container">
+          <div class="label">
+            <label for="codigo">Código</label>
+            <input type="text" class="codigo-input">
+            <input type="text" class="codigo-input">
+            <input type="text" class="codigo-input">
+          </div>
+          <div class="label">
+            <label for="descripcion">Descripción</label>
+            <input type="text" class="descripcion-input">
+            <input type="text" class="descripcion-input">
+            <input type="text" class="descripcion-input">
+          </div>
+          <div class="label">
+            <label for="cantidad">Cantidad</label>
+            <input type="text" class="cantidad-input">
+            <input type="text" class="cantidad-input">
+            <input type="text" class="cantidad-input">
+          </div>
+          <div class="label">
+            <label for="precio">Precio</label>
+            <input type="text" class="precio-input">
+            <input type="text" class="precio-input">
+            <input type="text" class="precio-input">
+          </div>
+        </div>
+        <button onclick="calcularTotal()">Enviar</button>
+      </div>
+      
+      <div class="result-container">
+        <div class="subtotal">Subtotal: <span id="subtotal">0</span></div>
+        <div class="impuestos">Impuestos: <span id="impuestos">0</span></div>
+        <div class="total">Total: <span id="total">0</span></div>
+      </div>
+      
+    <script src="app.js"></script>
+</body>
+</html>
